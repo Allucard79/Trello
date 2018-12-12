@@ -22,7 +22,7 @@ body {
   padding: 30px;
   text-align: left;
   text-transform: uppercase;
-  background-image: url("/images/Banner.jpg");
+  background-image: url("images/Banner.jpg");
 }
 
 .column-container {
