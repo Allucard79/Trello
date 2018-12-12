@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Encode+Sans+Condensed:400,700&subset=latin-ext');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+.board {
+    margin: 0 auto;
+    text-align: center;
+    h1 {
+        font-family: 'Bree Serif', serif;
+        margin-top: 0;
+        padding: 30px;
+        text-align: left;
+        text-transform: uppercase;
+        background-image: url('/images/Banner.jpg')
+    }
+}
+
+.column-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.create-column {
+    margin-top: 20px;
+}
+
+.column {
+    width: 100%;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+    padding: 0 30px;
+    height: 600px;
+    #deleteColumn {
+        position: absolute;
+        top: 90%;
+    }
+}
+
+.card {
+    background-color: #D8E4F4;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
