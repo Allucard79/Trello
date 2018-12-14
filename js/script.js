@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         addCard: function(card) {
         this.element.querySelector('ul').appendChild(card.element);
         },
+        
         removeColumn: function() {
         this.element.parentNode.removeChild(this.element);
         }
@@ -48,11 +49,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function Card(description) {
         var self = this;
-    
+        if (description === "") {
+            description='empty card';
+            alert('Add empty card !');
+        
+        }
+
         this.id = randomString();
         this.description = description;
         this.element = generateTemplate('card-template', { description: this.description }, 'li');
-    
         this.element.querySelector('.card').addEventListener('click', function (event) {
         event.stopPropagation();
     
@@ -87,8 +92,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelector('#board .create-column').addEventListener('click', function() {
         var name = prompt('Enter a column name');
+        if (name === "") {
+        alert('empty value !');
+        }
+
+        else {
         var column = new Column(name);
         board.addColumn(column);
+        }
     });
 
     // CREATING COLUMNS
@@ -109,4 +120,6 @@ var card2 = new Card('Create kanban boards');
 todoColumn.addCard(card1);
 doingColumn.addCard(card2);
 });
+
+
 
