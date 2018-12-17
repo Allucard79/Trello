@@ -23,9 +23,7 @@ body {
   padding: 30px;
   text-align: left;
   text-transform: uppercase;
-  <<<<<<< HEAD background-image: url("/images/Banner.jpg");
-  =======background-image: url("https://allucard79.github.io/Trello/images/Banner.jpg");
-  >>>>>>>61948ed1a3b5b5f262eac2f027bd5ceeab04da69
+  background-image: url("https://allucard79.github.io/Trello/images/Banner.jpg");
 }
 
 .column-container {
