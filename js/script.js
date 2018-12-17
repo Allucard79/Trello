@@ -35,7 +35,14 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             if (event.target.classList.contains('add-card')) {
-                self.addCard(new Card(prompt("Enter the name of the card")));
+                var name = prompt("Enter the name of the card");
+                if (name === null) {
+                    return;
+                } else if (name === '') {
+                    alert('empty value !');
+                } else {
+                    self.addCard(new Card(name));
+                }
             }
         });
     }
@@ -49,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
             this.element.parentNode.removeChild(this.element);
         }
     };
+
 
     function Card(description) {
         var self = this;
@@ -120,5 +128,4 @@ document.addEventListener('DOMContentLoaded', function () {
     todoColumn.addCard(card1);
     doingColumn.addCard(card2);
 });
-
 
