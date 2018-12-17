@@ -58,10 +58,6 @@ body {
   height: 550px;
 }
 
-.column ul {
-  list-style-type: none;
-}
-
 .card {
   background-color: #D8E4F4;
   border-radius: 5px;
