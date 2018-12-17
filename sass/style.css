@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Bree+Serif|Encode+Sans+Condensed:400,700&subset=latin-ext");
-
 * {
   margin: 0;
   padding: 0;
   border: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -31,10 +30,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
   text-align: center;
   padding: 20px;
 }
@@ -50,12 +49,16 @@ body {
   border-bottom: none;
   padding: 0 30px;
   height: 600px;
-  min-height: 100px;
+  min-width: 250px;
 }
 
 .column ul {
   list-style-type: none;
   height: 550px;
+}
+
+.column ul {
+  list-style-type: none;
 }
 
 .card {
@@ -70,5 +73,4 @@ body {
   cursor: -webkit-grab;
   cursor: grab;
 }
-
 /*# sourceMappingURL=style.css.map */
