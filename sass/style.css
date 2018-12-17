@@ -22,7 +22,7 @@ body {
   padding: 30px;
   text-align: left;
   text-transform: uppercase;
-  background-image: url("https://allucard79.github.io/Trello/images/Banner.jpg");
+  background-image: url("/images/Banner.jpg");
 }
 
 .column-container {
@@ -49,6 +49,7 @@ body {
   border-bottom: none;
   padding: 0 30px;
   height: 600px;
+  min-height: 100px;
 }
 
 .column #deleteColumn {
@@ -56,10 +57,20 @@ body {
   top: 90%;
 }
 
+.column ul {
+  list-style-type: none;
+}
+
 .card {
   background-color: #D8E4F4;
   border-radius: 5px;
   padding: 5px;
   margin: 5px;
+}
+
+.card:hover {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 /*# sourceMappingURL=style.css.map */
