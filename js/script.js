@@ -52,12 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function Card(description) {
         var self = this;
-        if (description === "") {
-            description = 'empty card';
-            alert('Add empty card !');
-        } else if (description === null) {
-            return;
-        }
 
         this.id = randomString();
         this.description = description;
